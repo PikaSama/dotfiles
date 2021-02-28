@@ -72,6 +72,9 @@ new_float normal
 bindsym $mod+o --release exec flameshot gui
 for_window [class="flameshot"] floating enable
 
+# Webstorm
+for_window [class="jetbrains-webstorm"] floating enable
+
 # yad-calendar
 for_window [class="Yad" title="yad-calendar"] floating enable
 
@@ -232,4 +235,4 @@ bindsym $mod+r mode "resize"
 # }
 
 # Gaps size
-gaps inner 6
+gaps inner 4
