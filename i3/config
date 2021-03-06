@@ -24,7 +24,7 @@ font pango:Source Code Pro 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-# exec_always --no-startup-id xss-lock -l -- multilockscreen --lock blur &
+exec_always --no-startup-id xss-lock -l -- multilockscreen --lock blur &
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -56,6 +56,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh --shades
 exec_always --no-startup-id variety
 exec_always --no-startup-id copyq
 exec_always --no-startup-id flameshot
+exec_always --no-startup-id numlockx on
 
 # Gnome polkit
 exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -81,8 +82,11 @@ for_window [class="Yad" title="yad-calendar"] floating enable
 # peek
 for_window [class="Peek"] floating enable
 
-# TIM
-for_window [class="tim.exe"] floating enable
+# QQ
+for_window [class="qq.exe"] floating enable
+
+# Wechat
+for_window [class="wechat.exe"] floating enable
 
 # Wine
 for_window [class="Wine"] floating enable
@@ -99,7 +103,7 @@ bindsym $mod+d exec "rofi -show drun -theme ~/.config/polybar/shades/scripts/rof
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # lock screen
-bindsym $mod+bracketleft exec multilockscreen -l dim
+bindsym $mod+bracketleft exec multilockscreen -l blur
 
 # powermenu
 bindsym $mod+bracketright exec bash ~/.config/polybar/shades/scripts/powermenu.sh

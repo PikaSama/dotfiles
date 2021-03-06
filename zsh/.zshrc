@@ -134,7 +134,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias spidup="cd /home/zorin/Desktop/projects/spider-checkupdate && yarn app && cd"
+alias spidup="cd /home/zorin/MyFiles/projects/spider-checkupdate && yarn app && cd"
 
 alias zfstart='sudo archlinux-java set java-8-openjdk && sh /home/zorin/zfile/bin/start.sh'
 alias zfstop='sudo archlinux-java set java-11-openjdk && sh /home/zorin/zfile/bin/stop.sh'
