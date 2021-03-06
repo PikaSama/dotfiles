@@ -145,7 +145,6 @@ alias cpuperf='sudo cpupower -c all frequency-set -g performance'
 alias cpusave='sudo cpupower -c all frequency-set -g powersave'
 
 alias ra='ranger'
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 
